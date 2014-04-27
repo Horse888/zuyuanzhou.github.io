@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E575B6B2-517B-4FCA-B5EB-78C3968560B0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MainWebSite</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BC2D0BA0-5FB6-484F-B59F-365FCE4FF0BF</key>
+		<string>https://github.com/ZYiOS/ZYiOS.github.io.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MainWebSite/MainWebSite.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BC2D0BA0-5FB6-484F-B59F-365FCE4FF0BF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ZYiOS/ZYiOS.github.io.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BC2D0BA0-5FB6-484F-B59F-365FCE4FF0BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BC2D0BA0-5FB6-484F-B59F-365FCE4FF0BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZYiOSMainWebPage</string>
+		</dict>
+	</array>
+</dict>
+</plist>
