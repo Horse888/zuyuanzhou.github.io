@@ -4,39 +4,19 @@
 		<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
 	</head>
 	<body style="margin:0">
-		<div id="youkuplayer"></div>
-		<script type="text/javascript" src="https://players.youku.com/jsapi"></script>
+		<div style="width: 200px; height: 40px; background-color:#eee;margin:0 auto;margin-top:100px;"><a href="./download/Unrar4iOS.framework.zip"> 下载 Unrar4iOS.framework </div>
+
+<br/>
+			<div>
 		<script type="text/javascript">
-			var QueryString = function () {
-				// This function is anonymous, is executed immediately and
-				// the return value is assigned to QueryString!
-				var query_string = {};
-				var query = window.location.search.substring(1);
-				var vars = query.split("&");
-				for (var i=0;i<vars.length;i++) {
-					var pair = vars[i].split("=");
-					// If first entry with this name
-					if (typeof query_string[pair[0]] === "undefined") {
-      query_string[pair[0]] = decodeURIComponent(pair[1]);
-	  // If second entry with this name
-					} else if (typeof query_string[pair[0]] === "string") {
-      var arr = [ query_string[pair[0]],decodeURIComponent(pair[1]) ];
-	  query_string[pair[0]] = arr;
-	  // If third or later entry with this name
-					} else {
-      query_string[pair[0]].push(decodeURIComponent(pair[1]));
-					}
-				}
-				return query_string;
-			}();
+    google_ad_client = "ca-pub-0702113122788244";
+    google_ad_slot = "7955979909";
+    google_ad_width = 300;
+    google_ad_height = 600;
+</script>
+<!-- zhouzuyuan.cn -->
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
 
-		player = new YKU.Player('youkuplayer', {
-								styleid: '0',
-								autoplay: true,
-								client_id: 'a378c8623c87f8c0',
-								vid: QueryString.vid,
-								embsig: QueryString.embsig
-								});
-
-			</script>
 	</body></html>
