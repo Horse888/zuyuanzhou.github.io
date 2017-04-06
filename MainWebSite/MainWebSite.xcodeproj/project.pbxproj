@@ -72,6 +72,7 @@
 		193782EC1B5D0535007075F9 /* _variables.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _variables.scss; sourceTree = "<group>"; };
 		193782ED1B5D0535007075F9 /* readme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = readme.pdf; path = ../readme.pdf; sourceTree = "<group>"; };
 		193782EF1B5D0535007075F9 /* style.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = style.scss; sourceTree = "<group>"; };
+		3A4A8B0F1E9638C8004C8A0D /* houseboyvideo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = houseboyvideo.html; path = ../houseboyvideo.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +170,7 @@
 				193782D21B5D0535007075F9 /* css */,
 				193782D51B5D0535007075F9 /* img */,
 				193782E41B5D0535007075F9 /* index.html */,
+				3A4A8B0F1E9638C8004C8A0D /* houseboyvideo.html */,
 				193782E51B5D0535007075F9 /* js */,
 				193782E91B5D0535007075F9 /* partials */,
 				193782ED1B5D0535007075F9 /* readme.pdf */,
