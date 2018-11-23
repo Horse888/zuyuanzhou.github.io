@@ -169,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				193782D11B5D0535007075F9 /* CNAME */,
-				3ACE90A721A79FA5003682CA /* file */,
+				3ACE90A721A79FA5003682CA /* DoorFile */,
 				193782D21B5D0535007075F9 /* css */,
 				193782D51B5D0535007075F9 /* img */,
 				193782E41B5D0535007075F9 /* index.html */,
@@ -183,13 +183,13 @@
 			);
 			sourceTree = "<group>";
 		};
-		3ACE90A721A79FA5003682CA /* file */ = {
+		3ACE90A721A79FA5003682CA /* DoorFile */ = {
 			isa = PBXGroup;
 			children = (
 				3ACE90A821A79FA5003682CA /* DoorCommon.plist */,
 			);
-			name = file;
-			path = ../file;
+			name = DoorFile;
+			path = ../DoorFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
