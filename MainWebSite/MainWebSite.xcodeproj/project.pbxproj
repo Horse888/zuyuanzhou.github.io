@@ -32,7 +32,7 @@
 		193783061B5D0535007075F9 /* _variables.scss in Resources */ = {isa = PBXBuildFile; fileRef = 193782EC1B5D0535007075F9 /* _variables.scss */; };
 		193783071B5D0535007075F9 /* readme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 193782ED1B5D0535007075F9 /* readme.pdf */; };
 		193783081B5D0535007075F9 /* style.scss in Resources */ = {isa = PBXBuildFile; fileRef = 193782EF1B5D0535007075F9 /* style.scss */; };
-		3ACE90A621A79EF9003682CA /* DoorCommon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE90A521A79EF9003682CA /* DoorCommon.plist */; };
+		3ACE90A921A79FA5003682CA /* DoorCommon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE90A821A79FA5003682CA /* DoorCommon.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +74,7 @@
 		193782ED1B5D0535007075F9 /* readme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = readme.pdf; path = ../readme.pdf; sourceTree = "<group>"; };
 		193782EF1B5D0535007075F9 /* style.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = style.scss; sourceTree = "<group>"; };
 		3A4A8B0F1E9638C8004C8A0D /* houseboyvideo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = houseboyvideo.html; path = ../houseboyvideo.html; sourceTree = "<group>"; };
-		3ACE90A521A79EF9003682CA /* DoorCommon.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DoorCommon.plist; sourceTree = "<group>"; };
+		3ACE90A821A79FA5003682CA /* DoorCommon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DoorCommon.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				193782D11B5D0535007075F9 /* CNAME */,
-				3ACE90A421A79E91003682CA /* file */,
+				3ACE90A721A79FA5003682CA /* file */,
 				193782D21B5D0535007075F9 /* css */,
 				193782D51B5D0535007075F9 /* img */,
 				193782E41B5D0535007075F9 /* index.html */,
@@ -183,12 +183,13 @@
 			);
 			sourceTree = "<group>";
 		};
-		3ACE90A421A79E91003682CA /* file */ = {
+		3ACE90A721A79FA5003682CA /* file */ = {
 			isa = PBXGroup;
 			children = (
-				3ACE90A521A79EF9003682CA /* DoorCommon.plist */,
+				3ACE90A821A79FA5003682CA /* DoorCommon.plist */,
 			);
-			path = file;
+			name = file;
+			path = ../file;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +282,7 @@
 				193782F51B5D0535007075F9 /* cd-icon-close-desktop.svg in Resources */,
 				193782FC1B5D0535007075F9 /* img-3-small.jpg in Resources */,
 				193782F11B5D0535007075F9 /* reset.css in Resources */,
-				3ACE90A621A79EF9003682CA /* DoorCommon.plist in Resources */,
+				3ACE90A921A79FA5003682CA /* DoorCommon.plist in Resources */,
 				193782F41B5D0535007075F9 /* cd-icon-arrow-mobile.svg in Resources */,
 				193783041B5D0535007075F9 /* _layout.scss in Resources */,
 				193783071B5D0535007075F9 /* readme.pdf in Resources */,
