@@ -76,6 +76,7 @@
 		3A4A8B0F1E9638C8004C8A0D /* houseboyvideo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = houseboyvideo.html; path = ../houseboyvideo.html; sourceTree = "<group>"; };
 		3ACE90A821A79FA5003682CA /* DoorCommon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DoorCommon.plist; sourceTree = "<group>"; };
 		3ACE90AA21A7A2BF003682CA /* DoorCommonDelete.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DoorCommonDelete.plist; sourceTree = "<group>"; };
+		3ACE90AF21A7D61C003682CA /* IP.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = IP.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				3ACE90AA21A7A2BF003682CA /* DoorCommonDelete.plist */,
+				3ACE90AF21A7D61C003682CA /* IP.txt */,
 				3ACE90A821A79FA5003682CA /* DoorCommon.plist */,
 			);
 			name = DoorFile;
