@@ -4,11 +4,11 @@
 <array>
 	<dict>
 		<key>URL</key>
-		<string>lymcommon/DIY.zip</string>
+		<string>cxha/Video0.mp4</string>
 		<key>Version</key>
 		<string>1</string>
 		<key>Description</key>
-		<string>DIY素材</string>
+		<string>宣传视频</string>
 	</dict>
 	<dict>
 		<key>URL</key>
@@ -20,14 +20,6 @@
 	</dict>
 	<dict>
 		<key>URL</key>
-		<string>bfl/ProductInfo.zip</string>
-		<key>Version</key>
-		<string>1</string>
-		<key>Description</key>
-		<string>产品素材</string>
-	</dict>
-	<dict>
-		<key>URL</key>
 		<string>bfl/AboutUs.zip</string>
 		<key>Version</key>
 		<string>1</string>
@@ -36,27 +28,11 @@
 	</dict>
 	<dict>
 		<key>URL</key>
-		<string>bfl/ProductProjects.zip</string>
-		<key>Version</key>
-		<string>1</string>
-		<key>Description</key>
-		<string>工程案例</string>
-	</dict>
-	<dict>
-		<key>URL</key>
 		<string>cxha/Certs.zip</string>
 		<key>Version</key>
 		<string>1</string>
 		<key>Description</key>
 		<string>证书</string>
-	</dict>
-	<dict>
-		<key>URL</key>
-		<string>cxha/Video0.mp4</string>
-		<key>Version</key>
-		<string>1</string>
-		<key>Description</key>
-		<string>宣传视频</string>
 	</dict>
 	<dict>
 		<key>URL</key>
@@ -73,6 +49,38 @@
 		<string>1</string>
 		<key>Description</key>
 		<string>产品相册</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>bfl/ProductProjects.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>工程案例</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>bfl/ProductInfo.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>产品素材</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>lymcommon/BgTemplate.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>DIY背景素材</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>lymcommon/DIY.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>DIY素材</string>
 	</dict>
 </array>
 </plist>
