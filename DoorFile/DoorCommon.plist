@@ -90,5 +90,13 @@
 		<key>Description</key>
 		<string>DIY素材</string>
 	</dict>
+	<dict>
+		<key>URL</key>
+		<string>lymcommon/ProductPNG.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>自由DIY素材</string>
+	</dict>
 </array>
 </plist>
