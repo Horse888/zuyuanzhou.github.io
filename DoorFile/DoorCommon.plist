@@ -44,6 +44,14 @@
 	</dict>
 	<dict>
 		<key>URL</key>
+		<string>cxha/ProductAlbum2017TYM.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>产品相册2</string>
+	</dict>
+	<dict>
+		<key>URL</key>
 		<string>bfl/ProductAlbum2016.zip</string>
 		<key>Version</key>
 		<string>1</string>
