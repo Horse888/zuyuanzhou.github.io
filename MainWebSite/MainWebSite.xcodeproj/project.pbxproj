@@ -28,6 +28,7 @@
 		193783051B5D0535007075F9 /* _mixins.scss in Resources */ = {isa = PBXBuildFile; fileRef = 193782EB1B5D0535007075F9 /* _mixins.scss */; };
 		193783061B5D0535007075F9 /* _variables.scss in Resources */ = {isa = PBXBuildFile; fileRef = 193782EC1B5D0535007075F9 /* _variables.scss */; };
 		193783071B5D0535007075F9 /* readme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 193782ED1B5D0535007075F9 /* readme.pdf */; };
+		3AB1BFE5230C17E200F35EF9 /* AboutPing.html in Resources */ = {isa = PBXBuildFile; fileRef = 3AB1BFE4230C17E200F35EF9 /* AboutPing.html */; };
 		3ACE90A921A79FA5003682CA /* DoorCommon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ACE90A821A79FA5003682CA /* DoorCommon.plist */; };
 		3AEF97382308335B00EA6BF8 /* bootstrap.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF96FB2308335A00EA6BF8 /* bootstrap.min.css */; };
 		3AEF97392308335B00EA6BF8 /* magnific-popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 3AEF96FC2308335A00EA6BF8 /* magnific-popup.css */; };
@@ -101,7 +102,6 @@
 
 /* Begin PBXFileReference section */
 		193782CF1B5CEB5E007075F9 /* MainWebSite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainWebSite.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		193782D01B5CEB5E007075F9 /* MainWebSiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MainWebSiteTests.xctest; path = "/Users/Dio/moon/2018Project/zuyuanzhou.github.io/MainWebSite/build/Debug-iphoneos/MainWebSiteTests.xctest"; sourceTree = "<absolute>"; };
 		193782D11B5D0535007075F9 /* CNAME */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CNAME; path = ../CNAME; sourceTree = "<group>"; };
 		193782D31B5D0535007075F9 /* reset.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reset.css; sourceTree = "<group>"; };
 		193782D41B5D0535007075F9 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
@@ -124,6 +124,8 @@
 		193782EC1B5D0535007075F9 /* _variables.scss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _variables.scss; sourceTree = "<group>"; };
 		193782ED1B5D0535007075F9 /* readme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = readme.pdf; path = ../readme.pdf; sourceTree = "<group>"; };
 		3A4A8B0F1E9638C8004C8A0D /* houseboyvideo.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = houseboyvideo.html; path = ../houseboyvideo.html; sourceTree = "<group>"; };
+		3AB1BFE2230C17BB00F35EF9 /* MainWebSiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainWebSiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB1BFE4230C17E200F35EF9 /* AboutPing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = AboutPing.html; path = ../AboutPing.html; sourceTree = "<group>"; };
 		3ACE90A821A79FA5003682CA /* DoorCommon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DoorCommon.plist; sourceTree = "<group>"; };
 		3ACE90AA21A7A2BF003682CA /* DoorCommonDelete.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DoorCommonDelete.plist; sourceTree = "<group>"; };
 		3ACE90AF21A7D61C003682CA /* IP.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = IP.txt; sourceTree = "<group>"; };
@@ -262,12 +264,14 @@
 				3ACE90A721A79FA5003682CA /* DoorFile */,
 				193782D21B5D0535007075F9 /* css */,
 				193782D51B5D0535007075F9 /* img */,
+				3AB1BFE4230C17E200F35EF9 /* AboutPing.html */,
 				193782E41B5D0535007075F9 /* index.html */,
 				3AEF96F92308335A00EA6BF8 /* assets */,
 				3A4A8B0F1E9638C8004C8A0D /* houseboyvideo.html */,
 				193782E91B5D0535007075F9 /* partials */,
 				193782ED1B5D0535007075F9 /* readme.pdf */,
 				193782CF1B5CEB5E007075F9 /* MainWebSite.app */,
+				3AB1BFE2230C17BB00F35EF9 /* MainWebSiteTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -415,7 +419,7 @@
 			);
 			name = MainWebSiteTests;
 			productName = MainWebSiteTests;
-			productReference = 193782D01B5CEB5E007075F9 /* MainWebSiteTests.xctest */;
+			productReference = 3AB1BFE2230C17BB00F35EF9 /* MainWebSiteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -497,6 +501,7 @@
 				3AEF976A2308335B00EA6BF8 /* team-3.png in Resources */,
 				3AEF97692308335B00EA6BF8 /* team-1.png in Resources */,
 				3AEF974B2308335B00EA6BF8 /* circle-progress.min.js in Resources */,
+				3AB1BFE5230C17E200F35EF9 /* AboutPing.html in Resources */,
 				3AEF97422308335B00EA6BF8 /* jquery.slicknav.min.js in Resources */,
 				193782F51B5D0535007075F9 /* cd-icon-close-desktop.svg in Resources */,
 				3AEF976F2308335B00EA6BF8 /* fontawesome-webfont.woff2 in Resources */,
