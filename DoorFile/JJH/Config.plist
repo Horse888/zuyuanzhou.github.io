@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>URL</key>
+		<string>jjh/Pano.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>企业全景</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>jjh/AboutUs.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>企业资料</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>jjh/Product3D.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>3D DIY素材</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>jjh/ProductPNG.zip</string>
+		<key>Version</key>
+		<string>3</string>
+		<key>Description</key>
+		<string>自由DIY素材</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>jjh/Certs.zip</string>
+		<key>Version</key>
+		<string>3</string>
+		<key>Description</key>
+		<string>企业证书</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>jjh/0Video.mp4</string>
+		<key>Version</key>
+		<string>3</string>
+		<key>Description</key>
+		<string>视频</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>jjh/0Video.png</string>
+		<key>Version</key>
+		<string>3</string>
+		<key>Description</key>
+		<string>视频封面</string>
+	</dict>
+</array>
+</plist>
