@@ -4,6 +4,14 @@
 <array>
 	<dict>
 		<key>URL</key>
+		<string>jjh/ProductAlbum2019.zip</string>
+		<key>Version</key>
+		<string>1</string>
+		<key>Description</key>
+		<string>产品相册</string>
+	</dict>
+	<dict>
+		<key>URL</key>
 		<string>jjh/Pano.zip</string>
 		<key>Version</key>
 		<string>1</string>
