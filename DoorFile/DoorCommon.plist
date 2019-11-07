@@ -4,14 +4,6 @@
 <array>
 	<dict>
 		<key>URL</key>
-		<string>bfl/ProductProjects.zip</string>
-		<key>Version</key>
-		<string>1</string>
-		<key>Description</key>
-		<string>工程案例</string>
-	</dict>
-	<dict>
-		<key>URL</key>
 		<string>lymcommon/BgTemplate.zip</string>
 		<key>Version</key>
 		<string>1</string>
@@ -20,19 +12,11 @@
 	</dict>
 	<dict>
 		<key>URL</key>
-		<string>lymcommon/DIY.zip</string>
-		<key>Version</key>
-		<string>1</string>
-		<key>Description</key>
-		<string>DIY素材</string>
-	</dict>
-	<dict>
-		<key>URL</key>
 		<string>lymcommon/ProductPNG.zip</string>
 		<key>Version</key>
 		<string>7</string>
 		<key>Description</key>
-		<string>自由DIY素材</string>
+		<string>自由DIY素材资料</string>
 	</dict>
 </array>
 </plist>
