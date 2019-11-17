@@ -36,14 +36,6 @@
 	</dict>
 	<dict>
 		<key>URL</key>
-		<string>jjh/Certs.zip</string>
-		<key>Version</key>
-		<string>5</string>
-		<key>Description</key>
-		<string>企业证书</string>
-	</dict>
-	<dict>
-		<key>URL</key>
 		<string>jjh/0Video.mp4</string>
 		<key>Version</key>
 		<string>3</string>
@@ -57,6 +49,14 @@
 		<string>3</string>
 		<key>Description</key>
 		<string>视频封面</string>
+	</dict>
+	<dict>
+		<key>URL</key>
+		<string>jjh/Certs.zip</string>
+		<key>Version</key>
+		<string>5</string>
+		<key>Description</key>
+		<string>企业证书</string>
 	</dict>
 </array>
 </plist>
