@@ -156,6 +156,177 @@ function autoPlay() {
   }
 }
 
+const particleCanvas = document.getElementById('particleCanvas');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let shouldReduceMotion = reduceMotion.matches;
+
+if (particleCanvas instanceof HTMLCanvasElement) {
+  const canvas = particleCanvas;
+  const ctx = canvas.getContext('2d');
+
+  if (ctx) {
+    const particles = [];
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    let pointer = {
+      x: width / 2,
+      y: height / 2,
+      vx: 0,
+      vy: 0,
+    };
+
+    const random = (min, max) => Math.random() * (max - min) + min;
+    const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+    const resizeCanvas = () => {
+      const dpr = window.devicePixelRatio || 1;
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+
+    const spawnParticle = (x, y, baseAngle, baseSpeed) => {
+      const speed = clamp(baseSpeed * random(0.4, 1.2), 0.4, 4.8);
+      const angle = baseAngle + random(-0.65, 0.65);
+      particles.push({
+        x,
+        y,
+        px: x,
+        py: y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        hue: random(170, 290),
+        size: random(1.2, 3.6),
+        life: random(34, 86),
+        lifeMax: 0,
+      });
+      const last = particles[particles.length - 1];
+      last.lifeMax = last.life;
+    };
+
+    const emitTrail = () => {
+      const speed = Math.hypot(pointer.vx, pointer.vy);
+      const count = Math.min(Math.max(Math.floor(speed * 0.25), 1), 10);
+      const angle = Math.atan2(pointer.vy, pointer.vx) + Math.PI;
+      const scaledSpeed = clamp(speed * 0.12 + 0.35, 0.25, 2.4);
+      for (let i = 0; i < count; i += 1) {
+        if (particles.length > 900) particles.shift();
+        spawnParticle(pointer.x, pointer.y, angle, scaledSpeed);
+      }
+    };
+
+    const emitBurst = (x, y) => {
+      for (let i = 0; i < 48; i += 1) {
+        if (particles.length > 900) particles.shift();
+        spawnParticle(
+          x,
+          y,
+          random(0, Math.PI * 2),
+          random(1.6, 3.6),
+        );
+      }
+    };
+
+    const onMove = (event) => {
+      if (shouldReduceMotion) return;
+      const nextX = event.clientX;
+      const nextY = event.clientY;
+      pointer.vx = nextX - pointer.x;
+      pointer.vy = nextY - pointer.y;
+      pointer.x = nextX;
+      pointer.y = nextY;
+      emitTrail();
+    };
+
+    const onDown = (event) => {
+      if (shouldReduceMotion) return;
+      emitBurst(event.clientX, event.clientY);
+    };
+
+    const onVisibility = () => {
+      if (document.hidden) {
+        particles.length = 0;
+      }
+    };
+
+    const tick = () => {
+      requestAnimationFrame(tick);
+      if (shouldReduceMotion) {
+        ctx.clearRect(0, 0, width, height);
+        return;
+      }
+
+      ctx.clearRect(0, 0, width, height);
+      ctx.globalCompositeOperation = 'lighter';
+
+      for (let i = particles.length - 1; i >= 0; i -= 1) {
+        const particle = particles[i];
+        particle.px = particle.x;
+        particle.py = particle.y;
+        particle.x += particle.vx;
+        particle.y += particle.vy;
+        particle.vx *= 0.98;
+        particle.vy *= 0.98;
+        particle.size *= 0.995;
+        particle.life -= 1;
+
+        const alpha = particle.life / particle.lifeMax;
+        if (alpha <= 0.02 || particle.size < 0.25) {
+          particles.splice(i, 1);
+          continue;
+        }
+
+        if (
+          particle.x < -40 ||
+          particle.y < -40 ||
+          particle.x > width + 40 ||
+          particle.y > height + 40
+        ) {
+          particles.splice(i, 1);
+          continue;
+        }
+
+        const lineColor = `hsla(${particle.hue}, 82%, 66%, ${clamp(alpha, 0, 0.75)})`;
+        const dotColor = `hsla(${particle.hue}, 85%, 74%, ${clamp(alpha * 1.1, 0, 0.95)})`;
+
+        ctx.beginPath();
+        ctx.lineWidth = Math.max(1, particle.size * 0.5);
+        ctx.strokeStyle = lineColor;
+        ctx.moveTo(particle.px, particle.py);
+        ctx.lineTo(particle.x, particle.y);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.fillStyle = dotColor;
+        ctx.arc(particle.x, particle.y, Math.max(particle.size * 0.5, 0.35), 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.globalCompositeOperation = 'source-over';
+    };
+
+    const onReduce = (event) => {
+      shouldReduceMotion = event.matches;
+      if (shouldReduceMotion) {
+        particles.length = 0;
+      }
+    };
+
+    resizeCanvas();
+    window.addEventListener('pointermove', onMove, { passive: true });
+    window.addEventListener('pointerdown', onDown);
+    window.addEventListener('resize', resizeCanvas);
+    document.addEventListener('visibilitychange', onVisibility);
+    reduceMotion.addEventListener('change', onReduce);
+
+    tick();
+  }
+}
+
 const style = document.createElement('style');
 style.textContent = `
 @keyframes fadeIn {
