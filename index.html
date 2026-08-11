@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZY | 个人技术主页</title>
+    <meta
+      name="description"
+      content="ZY 的个人网站。展示 iOS、Flutter 与 AI 方向的项目经验、技能和开源实践。"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="background-noise"></div>
+    <div class="terminal-shell">
+      <header class="terminal-topbar">
+        <div class="controls" aria-hidden="true">
+          <span class="dot close"></span>
+          <span class="dot minimize"></span>
+          <span class="dot maximize"></span>
+        </div>
+        <span class="topbar-title">zyshell@moon:~/portfolio</span>
+        <span class="status">online · production-ready</span>
+      </header>
+
+      <main class="terminal-grid">
+        <aside class="panel command-panel" aria-label="命令面板">
+          <h2>$ commands</h2>
+          <ul id="commandList" role="listbox" aria-label="可执行命令列表">
+            <li><button data-cmd="whoami">whoami</button></li>
+            <li><button data-cmd="projects">ls /projects</button></li>
+            <li><button data-cmd="experience">cat /timeline</button></li>
+            <li><button data-cmd="stack">cat /stack</button></li>
+            <li><button data-cmd="contact">cat /contact</button></li>
+          </ul>
+          <p class="hint">单击左侧命令，或等待自动播放，实时渲染内容</p>
+        </aside>
+
+        <section class="panel terminal-output" aria-live="polite" aria-label="终端输出区">
+          <div class="line prompt-line">
+            <span class="prompt">ZY@moon:~$</span>
+            <span class="cursor"></span>
+          </div>
+          <div class="output" id="output"></div>
+        </section>
+
+        <aside class="panel side-panel" aria-label="核心指标面板">
+          <h2>$ status</h2>
+          <div class="metric" id="metricProject">项目：4+</div>
+          <div class="metric" id="metricLines">代码行：持续更新</div>
+          <div class="metric" id="metricYears">经验：多年（iOS / Flutter / Cloud）</div>
+          <p class="note">每个项目都保持高内聚：先发可运行版本，再持续打磨。</p>
+        </aside>
+      </main>
+
+      <section class="panel stream" id="streamSection" aria-label="内容展示区">
+        <div id="streamTitle" class="section-title"></div>
+        <div id="streamContent" class="content"></div>
+      </section>
+    </div>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>
